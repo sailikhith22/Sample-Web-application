@@ -1,4 +1,13 @@
 pandas
 numpy
 seaborn
+matplotlib
+scikit-learn
+pickle4
+beautifulsoup4
+requests
+lxml
+flask
+pymongo
+pymongo[srv]
 -e .

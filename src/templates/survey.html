@@ -1,0 +1,199 @@
+<html>
+    <head>
+        <title>Survey Page</title>
+        <style>
+            .survey-top{
+                height: 200;
+                background-color: rgb(12, 223, 223);
+            }
+            h2:nth-child(1){
+                position: relative;
+                top: 100; 
+                
+            }
+            .form-details{
+                background-color: rgb(255, 255, 255);
+                
+            }
+            
+            .Questions{
+                font-family: "sans-serif";
+            }
+            h3{
+                color: indigo;
+            }
+            .submit-questions{
+                position: relative;
+                align-content: "center";                
+            }
+
+            .survey-bottom{
+                position: relative;
+                height: 200;
+                background-color: mediumaquamarine;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="survey-top">
+            <h2 align="center">It's great to see you here..!!<br></h2>
+        </div>
+        <form action="" method="POST">
+        <div class="form-details" align="center">
+        <div class="Questions">
+            
+            <fieldset>
+            <legend>Question1</legend>
+            <label for="Question1"><h3>1. Please provide your name</h3></label><br>
+            <input type="text" id="Name" name="Question1" style="width:200 ; height:30"><br>
+            </fieldset> 
+
+
+            <fieldset>
+            <legend>Question2</legend>
+            <label for="Question2"><h3>2. Please mention your age</h3></label>
+            <!-- <input type="number" name="age" placeholder="Enter your age" name="Question2" style="width:200; height:30">-->
+            <select name="Question2" id="Question2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+                <option value="32">32</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+                <option value="41">41</option>
+                <option value="42">42</option>
+                <option value="43">43</option>
+                <option value="44">44</option>
+                <option value="45">45</option>
+                <option value="46">46</option>
+                <option value="47">47</option>
+                <option value="48">48</option>
+                <option value="49">49</option>
+                <option value="50">50</option>
+            </select>
+            </fieldset>
+
+            <fieldset>
+            <legend>Question3</legend>
+            <h3>3. Please mention your gender</h3>
+            <select name="Question3" style="width:200; height:30">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            </select>
+            </fieldset>
+
+
+            <fieldset>
+            <legend>Question4</legend>
+            <h3>4. Appears bright, highly intelligent, and articulate but unable to read, write, or spell at grade level.</h3>
+            <input type="radio" name="Question4" value="Somewhat"/><label for="Question4">Somewhat</label><br>
+            <input type="radio" name="Question4" value="Absolutely"/><label for="Question4">Absolutely</label><br>
+            <input type="radio" name="Question4" value="Rarely or Never"/><label for="Question4">Rarely or Never</label><br>
+            </fieldset>
+
+            
+            <fieldset>
+            <legend>Question5</legend>
+            <h3>5. Labeled lazy, dumb, careless, immature, "not trying hard enough," or "a behavior problem."</h3>
+            <input type="radio" name="Question5" value="Absolutely"/><label for="Question5">Absolutely</label><br>
+            <input type="radio" name="Question5" value="Somewhat"/><label for="Question5">Somewhat</label><br>
+            <input type="radio" name="Question5" value="Rarely or Never"/><label for="Question5">Rarely or Never</label><br>
+            </fieldset>
+
+            <fieldset>
+            <legend>Question6</legend>
+            <h3>6. High in IQ, yet may not test well academically; tests well orally, but not written.</h3>
+            <input type="radio" name="Question6" value="Somewhat"/><label for="Question6">Somewhat</label><br>
+            <input type="radio" name="Question6" value="Absolutely"/><label for="Question6">Absolutely</label><br>
+            <input type="radio" name="Question6" value="Rarely or Never"/><label for="Question6">Rarely or Never</label><br>
+            </fieldset>
+
+            <fieldset>
+            <legend>Question7</legend>
+            <h3>7. Feels dumb; has poor self-esteem; hides or covers up weaknesses with ingenious compensatory strategies.</h3>
+            <input type="radio" name="Question7" value="Somewhat"/><label for="Question7">Somewhat</label><br>
+            <input type="radio" name="Question7" value="Absolutely"/><label for="Question7">Absolutely</label><br>
+            <input type="radio" name="Question7" value="Rarely or Never"/><label for="Question7">Rarely or Never</label><br>
+            </fieldset>
+
+            <fieldset>
+            <legend>Question8</legend>
+            <h3>8.Easily frustrated and emotional about school, reading or testing.</h3>
+            <input type="radio" name="Question8" value="Somewhat"/><label for="Question8">Somewhat</label><br>
+            <input type="radio" name="Question8" value="Absolutely"/><label for="Question8">Absolutely</label><br>
+            <input type="radio" name="Question8" value="Rarely or Never"/><label for="Question8">Rarely or Never</label><br>
+            </fieldset>
+
+            <fieldset>
+            <legend>Question9</legend>                
+            <h3>9. Seems to "zone out" or daydream often; gets lost easily or loses track of time.</h3>
+            <input type="radio" name="Question9" value="Somewhat"/><label for="Question9">Somewhat</label><br>
+            <input type="radio" name="Question9" value="Absolutely"/><label for="Question9">Absolutely</label><br>
+            <input type="radio" name="Question9" value="Rarely or Never"/><label for="Question9">Rarely or Never</label><br>
+            </fieldset>
+
+            <fieldset>
+            <legend>Question10</legend>                
+            <h3>10. Difficulty sustaining attention; seems "hyper" or "a daydreamer."</h3>
+            <input type="radio" name="Question10" value="Somewhat"/><label for="Question10">Somewhat</label><br>
+            <input type="radio" name="Question10" value="Absolutely"/><label for="Question10">Absolutely</label><br>
+            <input type="radio" name="Question10" value="Rarely or Never"/><label for="Question10">Rarely or Never</label><br>
+            </fieldset> 
+
+
+            <fieldset>
+            <legend>Question11</legend>
+            <h3>11. Learns best through hands-on experience, demonstrations, experimentation, observation, and visual aids.</h3>
+            <input type="radio" name="Question11" value="Somewhat"/><label for="Question11">Somewhat</label><br>
+            <input type="radio" name="Question11" value="Absolutely"/><label for="Question11">Absolutely</label><br>
+            <input type="radio" name="Question11" value="Rarely or Never"/><label for="Question11">Rarely or Never</label><br><br><br>
+            </fieldset>
+
+
+            <div class="submit-questions">
+            <input type="submit" name="submit" value="Submit" style="position: relative; top:10; height:40px; width:80px; text-align : center">
+            </div>
+        </div>  
+        </div> 
+        <div class="survey-bottom">
+            <h4>Don't worry this is just to create a dataset for us</h4>
+        </div>
+    </form>
+  
+    </body>
+</html>

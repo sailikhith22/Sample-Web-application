@@ -5,6 +5,7 @@ def error_message_details(error, error_detail):
     _,_,exc_tb = error_detail.exc_info()
     filename = exc_tb.tb_frame.f_code.co_filename
     error_message = "Error occured in python script name [{0}] and line no {1} error message is {2}".format(filename,exc_tb.tb_lineno,str(error))
+    logging.error(error_message)
     return error_message
 
 class CustomException(Exception):

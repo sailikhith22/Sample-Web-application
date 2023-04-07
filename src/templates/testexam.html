@@ -1,0 +1,208 @@
+<html>
+    <head>
+        <title>Test Exam</title>
+        <style>
+            .exam-head{
+                position: relative;
+                height: 1400;
+                background-color: white;
+            }
+            .exam-class{
+                position: relative;
+                height: 500;
+                background-color: rgb(19, 199, 231);
+            }
+            .exam-bottom{
+                position: relative;
+                height:200;
+                background-color: blue;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="exam-head">
+            <h3 style="text-align:center;position: relative;top:100">Thanks for showing interest in taking this exam.<br>
+            Click here to start exam<br><br>
+            <form action="" method="POST">
+            <button name="form1"></button>
+            <label for="name" >Enter your name</label><br><br>
+            <input type="text" name="name" placeholder="Enter your name" style="width: 250;height: 50;"><br><br>
+            <label for="name" >Enter your age</label><br><br>
+            <input type="number" name="age" placeholder="Enter your age" style="width:250;height:50;"><br><br>
+            <label for="gender" >Enter your gender</label><br><br>
+            <input type="radio" name="gender" value="male"><label for="gender">Male</label>
+            <input type="radio" name="gender" value="female"><label for="gender">Female</label><br><br>
+            
+            <input type="submit" value="Start Exam" name="button" style="height:50; width: 100; background-color: wheat">
+            
+            </form>
+        </h3>
+        </div>
+        {% block content %}
+        <div class="exam-class" id="exam-id">
+            <div class="questions-info" id="questions-info">
+                <h3 style="text-align:center;position: relative;top:100">The Exam starts in 5 secs.<br> Get your hands ready</h3>
+            </div>
+            <div class="questions" id="questions" >
+                <form method="POST" action="" name="questions">
+                    <button name="form2"></button>
+                <div class="question1" id="question1" style="display:none">
+                    <h2 style="text-align:center;position: relative;top:100">Q1. {{ questions[1] }}</h2>
+                </div>
+                <div class="answer1" id="answer1" style="display:none;text-align:center;position: relative;top:100">
+                    <input type="number" id="answer1" name="answer1" placeholder="Please enter value"  style="width:200 ; height:30"><br>
+                </div>
+                <div class="question2" id="question2" style="display:none">
+                    <h2 style="text-align:center;position: relative;top:100">Q2. {{ questions[2] }} </h2>
+                </div>
+                <div class="answer2" id="answer2" style="display:none;text-align:center;position: relative;top:100">
+                    <input type="number" id="answer2" name="answer2" placeholder="Please enter value"  style="width:200 ; height:30"><br>
+                </div>
+                <div class="question3" id="question3" style="display:none">
+                    <h2 style="text-align:center;position: relative;top:100">Q3. {{ questions[3] }}</h2>
+                </div>
+                <div class="answer3" id="answer3" style="display:none;text-align:center;position: relative;top:100">
+                    <input type="number" id="answer3" name="answer3" placeholder="Please enter value"  style="width:200 ; height:30"><br>
+                </div>
+                <div class="question4" id="question4" style="display:none">
+                    <h2 style="text-align:center;position: relative;top:100">Q4. {{ questions[4] }}</h2>
+                </div>
+                <div class="answer4" id="answer4" style="display:none;text-align:center;position: relative;top:100">
+                    <input type="number" id="answer4" name="answer4" placeholder="Please enter value" style="width:200 ; height:30"><br>
+                </div>
+
+                <div class="question5" id="question5" style="display:none">
+                    <h2 style="text-align:center;position: relative;top:100">Q5. {{ questions[5] }}</h2>
+                </div>
+                <div class="answer5" id="answer5" style="display:none;text-align:center;position: relative;top:100">
+                    <input type="number" id="answer5" name="answer5" placeholder="Please enter value"  style="width:200 ; height:30"><br>
+                </div>
+
+                <div class="question6" id="question6" style="display:none">
+                    <h2 style="text-align:center;position: relative;top:100">Q6. {{ questions[6] }}</h2>
+                </div>
+                <div class="answer6" id="answer6" style="display:none;text-align:center;position: relative;top:100">
+                    <input type="number" id="answer6" name="answer6" placeholder="Please enter value"  style="width:200 ; height:30"><br>
+                </div>
+
+                <div class="question7" id="question7" style="display:none">
+                    <h2 style="text-align:center;position: relative;top:100">Q7. {{ questions[7] }}</h2>
+                </div>
+                <div class="answer7" id="answer7" style="display:none;text-align:center;position: relative;top:100">
+                    <input type="number" id="answer7" name="answer7" placeholder="Please enter value"  style="width:200 ; height:30"><br>
+                </div>
+
+                <div class="question8" id="question8" style="display:none">
+                    <h2 style="text-align:center;position: relative;top:100">Q8. {{ questions[8] }}</h2>
+                </div>
+                <div class="answer8" id="answer8" style="display:none;text-align:center;position: relative;top:100">
+                    <input type="number" id="answer8" name="answer8" placeholder="Please enter value"  style="width:200 ; height:30"><br>
+                </div>
+
+                <div class="question9" id="question9" style="display:none">
+                    <h2 style="text-align:center;position: relative;top:100">Q9. {{ questions[9] }}</h2>
+                </div>
+                <div class="answer9" id="answer9" style="display:none;text-align:center;position: relative;top:100">
+                    <input type="number" id="answer9" name="answer9" placeholder="Please enter value"  style="width:200 ; height:30"><br>
+                </div>
+
+                <div class="question10" id="question10" style="display:none">
+                    <h2 style="text-align:center;position: relative;top:100">Q10. {{ questions[10] }}</h2>
+                </div>
+                <div class="answer10" id="answer10" style="display:none;text-align:center;position: relative;top:100">
+                    <input type="number" id="answer10" name="answer10"  placeholder="Please enter value"  style="width:200 ; height:30"><br>
+                </div>
+
+                <div class="question11" id="question11" style="display:none">
+                    <h2 style="text-align:center;position: relative;top:100">Q11. {{ questions[11] }}</h2>
+                </div>
+                <div class="answer11" id="answer11" style="display:none;text-align:center;position: relative;top:100">
+                    <input type="number" id="answer11" name="answer11" placeholder="Please enter value"  style="width:200 ; height:30"><br>
+                </div>
+
+                <div class="question12" id="question12" style="display:none">
+                    <h2 style="text-align:center;position: relative;top:100">Q12. {{ questions[12] }}</h2>
+                </div>
+                <div class="answer12" id="answer12" style="display:none;text-align:center;position: relative;top:100">
+                    <input type="number" id="answer12" name="answer12" placeholder="Please enter value" style="width:200 ; height:30"><br>
+                </div>
+
+                <div class="question13" id="question13" style="display:none">
+                    <h2 style="text-align:center;position: relative;top:100">Q13. {{ questions[13] }}</h2>
+                </div>
+                <div class="answer13" id="answer13" style="display:none;text-align:center;position: relative;top:100">
+                    <input type="number" id="answer13" name="answer13" placeholder="Please enter value"  style="width:200 ; height:30"><br>
+                </div>
+
+                <div class="question14" id="question14" style="display:none">
+                    <h2 style="text-align:center;position: relative;top:100">Q14. {{ questions[14] }}</h2>
+                </div>
+                <div class="answer14" id="answer14" style="display:none;text-align:center;position: relative;top:100">
+                    <input type="number" id="answer14" name="answer14" placeholder="Please enter value" style="width:200 ; height:30"><br>
+                </div>
+
+                <div class="question15" id="question15" style="display:none">
+                    <h2 style="text-align:center;position: relative;top:100">Q15. {{ questions[15] }}</h2>
+                </div>
+                <div class="answer15" id="answer15" style="display:none;text-align:center;position: relative;top:100">
+                    <input type="number" id="answer15" name="answer15" placeholder="Please enter value" style="width:200 ; height:30"><br>
+                </div>
+
+                <div class="questions-submit" id="questions-submit" style="display:none;position: relative;top:100;text-align: center;">
+                    <input type="submit" value="End Exam" name="button" style="height:50; width: 100; background-color: wheat">
+                </div>
+            </form>
+                
+            </div>
+            
+            <!--<h2 id="questions" style="text-align:center;position: relative;top:100">The exam starts in 5 seconds</h2>-->
+            <script> 
+            window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+            }  
+            function scrolldiv() {
+            window.scrollTo(0, 
+            findPosition(document.getElementById("exam-id")));
+            }
+            function findPosition(obj){
+                var currenttop = 0;
+                if (obj.offsetParent) {
+                    do {
+                        currenttop += obj.offsetTop;
+                    } while ((obj = obj.offsetParent));
+                    return [currenttop];
+                }
+            }
+            window.setTimeout(function() {
+            document.getElementById('questions-info').style.display = "none"
+            }, 5000);
+            let time = 5000;
+            for( let i=1; i<=15;i++){
+            window.setTimeout(function() {
+            document.getElementById('question'+i).style.display = "block"
+            }, time = time+1000);
+            window.setTimeout(function() {
+            document.getElementById('question'+i).style.display = "none"
+            }, time=time+1000);
+            window.setTimeout(function() {
+            document.getElementById('answer'+i).style.display = "block"
+            }, time = time+1000);
+            window.setTimeout(function() {
+            document.getElementById('answer'+i).style.display = "none"
+            }, time=time+1000);         
+            }
+            window.setTimeout(function() {
+            document.getElementById("questions-submit").style.display = "block"
+            }, 50000);
+            
+
+            </script>            
+            
+        </div>
+        {% endblock %}
+        <div class="exam-bottom">
+
+        </div>
+    </body>
+</html>

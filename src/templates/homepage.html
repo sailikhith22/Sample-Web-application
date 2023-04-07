@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Home Page</title>
+        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+        <style>
+            .homepage-info{
+                position: relative;
+                height: 500;
+                background-color : rgb(3, 214, 233) ;
+                margin: 15px ;
+                outline: 2px;
+            }
+
+            .homepage-content{
+                display: flex;
+                position: relative;
+                max-width: 100vw;
+                height: 500;
+                background-color : rgb(255, 252, 248);
+            }
+
+            .hc-1{                
+                width: 750;
+                height: 500;
+                background-color : rgb(101, 0, 52);
+                outline: 2px;
+                margin: 15px ;              
+            }
+            h2:nth-child(1){
+                position: relative;
+                top: 100;
+                align-content: "center";
+                font-size : 30px;
+                font-weight : bold;
+            }
+            .hc-1:hover{
+                background-color :white;
+            }
+            .hc-2:hover{
+                background-color :white;
+            }
+            .hc-2{         
+                height: 500;
+                width: 750;
+                outline: 2px;
+                background-color: palevioletred; 
+                margin: 15px ;                
+            }
+            .homepage-bottom{                
+                height: 350;
+                background-color: rgb(5, 0, 61);
+                padding: 15px;
+                outline: 2px;
+                margin: 15px ;
+                color : white;
+            }
+        </style>
+    </head>
+    <body> 
+       <div class = "homepage-info">
+           <h2><font size="+4">This is homepage of the website</font></h2>
+           <p>{{ data }}</p>
+        </div>
+        <div class="homepage-content">
+            <div class="hc-1">
+                <h2>This is homepage content div1 </h2>
+                <a href= {{ url_for( "survey" ) }}>Help us to complete our survey</a>
+            </div>  
+            <div class="hc-2">
+                <h2>This is homepage content div2 </h2>
+                <a href= {{ url_for( "examtest", message = "from homepage") }}>Check out whether you have Dyslexia</a>
+            </div>
+        </div>
+        <div class="homepage-bottom">
+            <p>This is the bottom of the page</p>
+        </div>
+    </body>
+</html>
