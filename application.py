@@ -6,9 +6,9 @@ from src.exceptions import CustomException
 from src.extractinginfo import get_questions
 from src.pipelines.predict_pipeline import PredictPipeline
 
-app = Flask(__name__)
+application = Flask(__name__)
 
-
+app = application
 
 @app.route("/")
 def welcomepage():
@@ -124,4 +124,4 @@ def thankspage():
         return "<h2>Some thing went wrong in passing the data from the testpage</h2>" , {"Refresh": "5; url:homepage"}
 
 if __name__=="__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0")
