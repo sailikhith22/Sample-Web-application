@@ -10,4 +10,4 @@ lxml
 flask
 pymongo
 pymongo[srv]
-#-e .
+-e .
