@@ -8,6 +8,4 @@ beautifulsoup4
 requests
 lxml
 flask
-pymongo
-pymongo[srv]
-#-e .
+-e .

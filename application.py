@@ -37,7 +37,7 @@ def survey():
             Q9 = request.form.get("Question9")
             Q10 = request.form.get("Question10")
             Q11 = request.form.get("Question11")
-            store_surveydata(Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11)
+            #store_surveydata(Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11)
             return "<h2 align='center'>Data has been saved successfully</h2>", {"Refresh": "5; url=homepage"}
         else:
             return render_template("survey.html")
@@ -105,7 +105,7 @@ def examtest(message):
                 predictpipe = PredictPipeline()
                 test_result = predictpipe.predict(generated_dataframe)
                 
-                return render_template("thankspage.html", results = test_result), {"Refresh":"10; url:homepage"}
+                return "<h2 align='center'>Having dyslexia is {}</h2>".format(test_result)#, {"Refresh": "5; url=homepage"}
             else:
                 return "<h3> Got inside the third block</h3>"
         else:
@@ -121,7 +121,7 @@ def thankspage():
         
         return render_template("thankspage.html")
     except Exception as e:
-        return "<h2>Some thing went wrong in passing the data from the testpage</h2>" , {"Refresh": "5; url:homepage"}
+        return "<h2>Some thing went wrong in passing the data from the testpage</h2>" ,  {"Refresh": "5; url=homepage"}
 
 if __name__=="__main__":
     app.run(host="0.0.0.0")

@@ -65,19 +65,20 @@ def get_columns(orig, given):
     return orig , miss, score, accuracy, misrate
 # Connecting to Demo1db Database
 # Only collections differ 
-client = pymongo.MongoClient("mongodb+srv://maheshbabu9199:RXsHAm3fjrstQQoy@cluster0.6nqhrwi.mongodb.net/test")
-mydb = client["MyDemodatabase"]
+#client = pymongo.MongoClient("mongodb+srv://maheshbabu9199:RXsHAm3fjrstQQoy@cluster0.6nqhrwi.mongodb.net/test")
+#mydb = client["MyDemodatabase"]
 
 def store_surveydata(Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11):
-    survey = mydb.Surveytable
-    records = {"name":Q1,"age":Q2, "gender":Q3,"Question1":Q4, "Question2":Q5, "Question3":Q6, "Question4":Q7, "Question5":Q8, "Question6":Q9,"Question7":Q10,"Question8":Q11}
-    survey.insert_one(records)
+    #survey = mydb.Surveytable
+   # records = {"name":Q1,"age":Q2, "gender":Q3,"Question1":Q4, "Question2":Q5, "Question3":Q6, "Question4":Q7, "Question5":Q8, "Question6":Q9,"Question7":Q10,"Question8":Q11}
+    #survey.insert_one(records)
+    print("inside store_surveydata")
 
 
 
 # here questions means given answers, answers means original answers
 # questions are list, answers are in dict format 
-#message = {'name': 'sdfasdf', 'age': 13123, 'gender': 'male'}
+# message = {'name': 'sdfasdf', 'age': 13123, 'gender': 'male'}
 def store_examdata(message, questions):
     answers = get_answers()
     message = eval(message)
@@ -101,9 +102,10 @@ def store_examdata(message, questions):
         records["Accuracy"+str(i+1)] = accuracy
         records["Misrate"+str(i+1)] = misrate
     logging.info("\n\nFinal records\n{}".format(records))
-    exams_data = mydb.Examtable
-    exams_data.insert_one(records)
-    return records 
+    return records
+    #exams_data = mydb.Examtable
+    #exams_data.insert_one(records)
+     
 
 def get_dataframe(data):
     
