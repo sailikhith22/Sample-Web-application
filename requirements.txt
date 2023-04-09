@@ -8,4 +8,9 @@ beautifulsoup4
 requests
 lxml
 flask
+<<<<<<< HEAD
+=======
+pymongo
+pymongo[srv]
+>>>>>>> ed6a18269ebb60d64c28b9df9c7a7bb929d6aec1
 -e .
