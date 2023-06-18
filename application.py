@@ -124,4 +124,4 @@ def thankspage():
         return "<h2>Some thing went wrong in passing the data from the testpage</h2>" ,  {"Refresh": "5; url=homepage"}
 
 if __name__=="__main__":
-    app.run(host="0.0.0.0")
+    app.run(host="0.0.0.0", port=int("5000"), debug=True)
